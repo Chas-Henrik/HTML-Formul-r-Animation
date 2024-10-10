@@ -11,41 +11,45 @@
     <form class="form" action="https://httpbin.org/anything" method="POST">
         <fieldset class="firstname">
             <legend for="firstname">Förnamn</legend>
-            <input type="text" id="firstname" name="firstname">
+            <input type="text" id="firstname" name="firstname" required>
         </fieldset>
     
         <fieldset class="lastname">
         <legend for="lastname">Efternamn</legend>
-        <input type="text" id="lastname" name="lastname">
+        <input type="text" id="lastname" name="lastname" required>
         </fieldset>
 
         <fieldset class="password">
             <legend for="password">Lösenord</legend>
-            <input type="password" id="password" name="password">
+            <input type="password" id="password" name="password" required>
         </fieldset>
 
         <fieldset class="message">
             <legend for="message">Personligt brev</legend>
-            <textarea name="message" id="message" placeholder="Skriv något här"></textarea>
+            <textarea name="message" id="message" placeholder="Skriv ditt personliga brev här..." required></textarea>
         </fieldset>
 
         <fieldset class="gender">
             <legend>Kön & Ålder</legend>
             <div class="container">
                 <div>
-                    <label for="man"><input type="radio" value="man" name="gender" id="man"> Man</label>
-                    <label for="kvinna"><input type="radio" value="kvinna" name="gender" id="kvinna"> Kvinna</label>
+                    <input type="radio" value="man" name="gender" id="man" checked><label for="man"> Man</label>
+                    <input type="radio" value="kvinna" name="gender" id="kvinna"><label for="kvinna"> Kvinna</label>
                 </div>
                 <div>
                     <label class="age" for="age">Ålder</label>
-                    <input type="number" id="age" name="age">
+                    <input type="number" id="age" name="age" required>
                 </div>
             </div>
         </fieldset>
         <fieldset class="education">
             <legend>Utbildning</legend>
-            <label for="check1"><input type="checkbox" value="check1" name="education" id="check1"> Gymnasial</label>
-            <label for="check2"><input type="checkbox" value="check2" name="education" id="check2"> Högskola/universitet</label>
+            <div>
+                <input type="checkbox" value="college" name="education" id="college"><label for="college"> Gymnasial</label>
+            </div>
+            <div>
+                <input type="checkbox" value="university" name="education" id="university"><label for="university"> Högskola/universitet</label>
+            </div>
         </fieldset>
 
         <fieldset class="send">
