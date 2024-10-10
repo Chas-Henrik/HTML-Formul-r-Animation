@@ -131,6 +131,7 @@ legend {
 
 .gender {
     grid-column: 1 / 3;
+    width: 95%;
 }
 
 .container {
