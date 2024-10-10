@@ -9,8 +9,69 @@
     height: 80vh;
     margin: 3vh auto;
     display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 2rem;
 }
 
-.label {
+fieldset {
+    padding: 0.5rem;
+}
+
+label {
     display: block;
 }
+
+.gender {
+    display: flex;
+    flex-direction: column;
+}
+
+.gender legend {
+    padding-left: 3px;
+}
+.gender label {
+    display: inline;
+}
+
+.education label {
+    display: block;
+}
+
+.firstname {
+    grid-column: 1 / 2;
+}
+
+.lastname {
+    grid-column: 2 / 3;
+}
+
+.password {
+    grid-column: 1 / 3;
+}
+
+.message {
+    grid-column: 1 / 3;
+    height: auto;
+    width: 100%;
+
+    textarea {
+        width: 100%;
+    }
+}
+
+.gender {
+    grid-column: 1 / 3;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.send {
+    grid-column: 1 / 3;
+    justify-self: center;
+    align-self: center;
+}
+

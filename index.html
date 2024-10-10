@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 
 <head>
     <meta charset="UTF-8">
@@ -10,43 +10,46 @@
 <body>
     <form class="form" action="https://httpbin.org/anything" method="POST">
         <fieldset class="firstname">
-            <label for="firstname">Firstname:</label>
+            <legend for="firstname">Förnamn</legend>
             <input type="text" id="firstname" name="firstname">
         </fieldset>
     
         <fieldset class="lastname">
-        <label for="lastname">Lastname:</label>
+        <legend for="lastname">Efternamn</legend>
         <input type="text" id="lastname" name="lastname">
         </fieldset>
 
         <fieldset class="password">
-            <label for="password">Password:</label>
+            <legend for="password">Lösenord</legend>
             <input type="password" id="password" name="password">
         </fieldset>
 
         <fieldset class="message">
-            <label for="message">Message:</label>
+            <legend for="message">Personligt brev</legend>
             <textarea name="message" id="message" placeholder="Skriv något här"></textarea>
         </fieldset>
 
-        <fieldset class="food">
-            <p>Choose food:</p>
-            <label for="radio1">Radio1:</label>
-            <input type="radio" value="radio1" name="food" id="radio1">
-            <label for="pasta">Radio2:</label>
-            <input type="radio" value="radio2" name="food" id="radio2">
+        <fieldset class="gender">
+            <legend>Kön & Ålder</legend>
+            <div class="container">
+                <div>
+                    <label for="man"><input type="radio" value="man" name="gender" id="man"> Man</label>
+                    <label for="kvinna"><input type="radio" value="kvinna" name="gender" id="kvinna"> Kvinna</label>
+                </div>
+                <div>
+                    <label class="age" for="age">Ålder</label>
+                    <input type="number" id="age" name="age">
+                </div>
+            </div>
         </fieldset>
-
-        <fieldset class="candy">
-            <p>Choose candy:</p>
-            <label for="check1">Check1:</label>
-            <input type="checkbox" value="check1" name="candy" id="check1">
-            <label for="check2">Check2:</label>
-            <input type="checkbox" value="check2" name="candy" id="check2">
+        <fieldset class="education">
+            <legend>Utbildning</legend>
+            <label for="check1"><input type="checkbox" value="check1" name="education" id="check1"> Gymnasial</label>
+            <label for="check2"><input type="checkbox" value="check2" name="education" id="check2"> Högskola/universitet</label>
         </fieldset>
 
         <fieldset class="send">
-            <button type="submit">Submit</button>
+            <button type="submit">Skicka</button>
         </fieldset>
     </form>
 </body>
