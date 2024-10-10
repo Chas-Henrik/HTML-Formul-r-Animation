@@ -11,6 +11,7 @@
 
 body {
     font-size: 2rem;
+    background-color: lightgray;
 }
 
 .form {
@@ -23,6 +24,10 @@ body {
     gap: 2rem;
 }
 
+fieldset {
+    background-color: white;
+}
+
 input {
     height: 4rem;
     font-size: 2rem;
@@ -33,12 +38,16 @@ input:invalid, textarea:invalid {
     border: 2px solid red;
 }
 
+input:valid, textarea:valid {
+    border: 2px solid green;
+}
+
 input:hover {
     background-color: rgb(238, 234, 234);
 }
 
 input:focus {
-    outline-color: green;
+    outline-color: orange;
 }
 
 input:active {
@@ -51,6 +60,13 @@ fieldset {
 
 label {
     display: block;
+}
+
+legend {
+    border-top: 1px solid black;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    background-color: white;
 }
 
 .gender {
@@ -116,7 +132,8 @@ label {
     justify-self: center;
     align-self: center;
     border: none;
-    
+    background-color: lightgray;
+
     button {
         padding: 1rem 2rem;
         border-radius: 5px;
