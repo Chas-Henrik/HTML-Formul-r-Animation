@@ -8,6 +8,46 @@
     <title>HTML Formulär & Animation</title>
 </head>
 <body>
+    <form class=".form" action="https://httpbin.org/anything" method="POST">
+        <fieldset class="firstname">
+            <label for="firstname">Firstname:</label>
+            <input type="text" id="firstname" name="firstname">
+        </fieldset>
     
+        <fieldset class="lastname">
+        <label for="lastname">Lastname:</label>
+        <input type="text" id="lastname" name="lastname">
+        </fieldset>
+
+        <fieldset class="password">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+        </fieldset>
+
+        <fieldset class="message">
+            <label for="message">Message:</label>
+            <textarea name="message" id="message" placeholder="Skriv något här"></textarea>
+        </fieldset>
+
+        <fieldset class="food">
+            <p>Choose food:</p>
+            <label for="radio1">Radio1:</label>
+            <input type="radio" value="radio1" name="food" id="radio1">
+            <label for="pasta">Radio2:</label>
+            <input type="radio" value="radio2" name="food" id="radio2">
+        </fieldset>
+
+        <fieldset class="candy">
+            <p>Choose candy:</p>
+            <label for="check1">Check1:</label>
+            <input type="checkbox" value="check1" name="candy" id="check1">
+            <label for="check2">Check2:</label>
+            <input type="checkbox" value="check2" name="candy" id="check2">
+        </fieldset>
+
+        <fieldset class="send">
+            <button type="submit">Submit</button>
+        </fieldset>
+    </form>
 </body>
 </html>
