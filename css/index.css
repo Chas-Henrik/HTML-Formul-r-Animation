@@ -55,7 +55,13 @@ input:active {
 }
 
 fieldset {
+    position: relative;
     padding: 1rem;
+}
+
+fieldset input{
+    position: relative;
+    z-index: 2;
 }
 
 label {
@@ -63,7 +69,12 @@ label {
 }
 
 legend {
-    border-top: 1px solid black;
+    position: relative;
+    z-index: -1;
+    left: 0;
+    bottom: 1.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid black;
     border-radius: 5px;
     padding: 0.5rem 1rem;
     background-color: white;
