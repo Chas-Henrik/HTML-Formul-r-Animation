@@ -62,11 +62,6 @@ fieldset {
     justify-self: flex-start;
 }
 
-fieldset input{
-    position: relative;
-    z-index: 2;
-}
-
 label {
     display: block;
 }
